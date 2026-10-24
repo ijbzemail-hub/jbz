@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+/* Главное: */
+
+
+
+:root {
+    --bg_main: radial-gradient(circle at 50% 20%, #107C41 0%, #0A1C11 40%, #0B0E14 100%);
+    --bg-card: linear-gradient(135deg, #00FF66 0%, #107C41 50%, #084B25 100%);
+    --xbox1: #107c10;
+    --xbox2: #107C41;
+    --xbox3: #0F7C0F;
+    --litexbox: #00FF66;
+    --text: #fff;
+    --text2: #D0E8D8;
+    --shadow: drop-shadow(0 0 8px rgba(0, 255, 102, 0.6))
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg_main);
+    font-family: "Russo One", sans-serif;
+    /* "Roboto", */
+    /* "Press Start 2P", system-ui; */
+    margin: 0;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+
+
+}
+
+.Main_portfolio {
+    font-family: "Press Start 2P", system-ui;
+    ;
+    font-size: clamp(15px, 5vw, 25px);
+    /* background: linear-gradient(45deg, #111, #898787); */
+    color: var(--text);
+    text-align: center;
+    margin: 12px 0 28px;
+
+}
+
+
+.Divace_P,
+.Divace_name,
+.txt_social {
+    font-family: "Press Start 2P", system-ui;
+    ;
+    color: var(--text);
+    font-size: clamp(14px, 4.5vw, 35px);
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+/* Пролог и знакомство */
+.Main_prolog {
+    background: var(--bg-card);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    filter: var(--shadow);
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    gap: 20px;
+
+}
+
+.Main_img {
+    border-radius: 40px;
+    padding: 10px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.Main_word {
+    color: var(--text);
+
+    font-size: clamp(24px, 4vw, 35px);
+}
+
+.login {
+
+    filter: var(--shadow);
+}
+
+.Main_P {
+    font-size: 18.5px;
+    color: var(--text2);
+    margin: 0;
+}
+
+
+/* Информация о увлечениях */
+.Informatoin {
+    color: var(--text2);
+    font-size: 20px;
+    width: 100%;
+    max-width: 545px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.InfoRM {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+}
+
+.info_PM {
+    font-size: clamp(20px, 3.5vw, 31.5px);
+    color: rgb(185, 208, 103);
+    margin: 0;
+    padding: 20px 5px 0 5px;
+}
+
+.info_P {
+    font-size: 18.5px;
+    margin: 0;
+    padding: 0 5px 0 5px;
+}
+
+.Prolog {
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Фотография моих девайсов */
+
+.Main_bk,
+.work_bk,
+.MySites_bk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.DivaceImg {
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* -- 3 -- */
+
+
+.MySites {
+    background: var(--bg-card);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    filter: var(--shadow);
+    margin: 30px 0px;
+    padding: 20px;
+    width: 100px;
+}
+
+.list_projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.Divace_PDivace_P3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Divace_P3 {
+    margin-top: 20px;
+}
+
+.project {
+    width: 100%;
+
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: #fff;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a.prj {
+    width: 100%;
+    width: 450px;
+    margin: 10px;
+    background: var(--bg-card);
+    border-radius: 50px;
+    filter: var(--shadow);
+    box-sizing: border-box;
+
+}
+
+
+.prj {
+    width: 100%;
+    max-width: 450px;
+    margin: 15px;
+}
+
+.Divace_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    border-radius: 50px;
+}
+
+.proj_img {
+    display: flex;
+    justify-content: space-evenly;
+
+
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+
+.proj_img>img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 20px;
+    height: auto;
+}
+
+.proj_p {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 18px;
+    color: var(--text);
+    text-align: center;
+}
+
+.img_project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 750px;
+    
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.name_proj {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 18px;
+    color: var(--text);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0 0 0;
+}
+
+.name_pjn {
+    font-family: "Press Start 2P", system-ui;
+    font-size: 18px;
+    color: var(--text2t);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.proj_max {
+    width: 100%;
+    max-width: 450px;
+    padding: 4px;
+}
+
+
+.proj_png {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 40px;
+    object-fit: cover;
+    box-sizing: border-box;
+    
+}
+
+.Last_bk {
+    width: 100%;
+   
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 920px) {
+    .Main_word {
+
+
+        font-size: clamp(24px, 4vw, 30px);
+    }
+
+
+    .Main_P {
+        font-size: 16px;
+        color: var(--text2);
+        margin: 0;
+    }
+
+
+    .info_PM {
+        font-size: clamp(20px, 3.5vw, 25px);
+        color: rgb(185, 208, 103);
+        margin: 0;
+        padding: 20px 5px 10px 5px;
+    }
+
+    .info_P {
+        font-size: 16px;
+        margin: 0;
+        padding: 0 5px 0 5px;
+
+    }
+
+}
+
+@media (max-width: 740px) {
+
+    .Main_prolog {
+
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+
+
+    .Main_img {
+        padding: 0;
+        max-width: 90%;
+        border-radius: 30px;
+    }
+
+    .Main_portfolio {
+
+        font-size: clamp(15px, 4vw, 20px);
+    }
+
+    .project {
+        flex-wrap: wrap;
+    }
+
+    .proj_img>img {
+        width: 100%;
+        max-width: 120px;
+        border-radius: 20px;
+        height: auto;
+    }
+
+    .Main_bk,
+    .work_bk,
+    .MySites_bk {
+        width: 90%;
+    }
+
+    h1{
+        width: 90%;
+    }
+}
+
+@media (max-width: 350px) {
+    .Main_portfolio{
+        font-size: clamp(5px, 4vw, 20px);
+    }
+
+    .proj_img{
+        max-width: 100%;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+     .proj_img>img {
+        
+        max-width: 100px;
+    }
+
+    .img_project{
+        
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
